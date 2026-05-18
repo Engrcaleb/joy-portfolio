@@ -45,28 +45,57 @@
     </button>
 
     <div class="max-w-4xl mx-auto">
-        <!-- Header -->
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-slate-900">Joy Alozie</h1>
-            <p class="text-slate-500 text-lg md:text-xl font-medium">Professional Healthcare Diagnostics | Aspiring Data Analyst | Problem Solver</p>
-            <div class="flex justify-center mt-8 gap-4">
-                <a href="mailto:joybenalozie@gmail.com" class="flex items-center px-6 py-2 btn-purple rounded-md text-sm font-medium shadow-sm text-slate-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
-                    Email Me
-                </a>
-                <a href="#" class="flex items-center px-6 py-2 btn-purple rounded-md text-sm font-medium shadow-sm text-slate-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.658 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
-                    </svg>
-                    LinkedIn
-                </a>
+        <!-- Hero Section -->
+        <header class="hero-section mb-16">
+            <!-- Left: text content -->
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Healthcare Diagnostics &amp; Data Analyst
+                </div>
+
+                <h1 class="hero-heading">
+                    Hi, I'm <span class="hero-name">Joy</span>
+                </h1>
+
+                <p class="hero-sub">
+                    A passionate and detail-oriented professional with expertise in healthcare diagnostics, data insights, and solving real-world problems through analytical thinking.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="mailto:joybenalozie@gmail.com" class="hero-btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hero-btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        Get in Touch
+                    </a>
+                    <a href="#bio" class="hero-btn-secondary">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Right: photo + floating badges -->
+            <div class="hero-right">
+                <!-- Floating badge top-right -->
+                <div class="hero-float hero-float-tr">
+                    <div class="hero-float-label">✓ Certified</div>
+                    <div class="hero-float-value">Data Analyst</div>
+                </div>
+
+                <!-- Photo circle -->
+                <div class="hero-photo-wrap">
+                    <img src="./joy.jpg" alt="Joy Alozie" class="hero-photo" onerror="this.style.display='none'; this.parentElement.classList.add('hero-photo-placeholder')" />
+                </div>
+
+                <!-- Floating badge bottom-left -->
+                <div class="hero-float hero-float-bl">
+                    <div class="hero-float-label">⚕ Expertise</div>
+                    <div class="hero-float-value">Healthcare Ops</div>
+                </div>
             </div>
         </header>
 
         <!-- Professional Bio (First) -->
-        <div class="card">
+        <div class="card" id="bio">
             <div class="flex items-center mb-4 text-slate-700 font-bold text-sm tracking-widest uppercase">
                 <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-5 w-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
@@ -195,7 +224,7 @@
                     <div class="text-purple-600 font-bold text-[10px] tracking-widest uppercase mb-2">Clinical Data</div>
                     <h3 class="text-xl font-bold mb-3">Lab Data Management</h3>
                     <p class="text-slate-600 text-sm mb-6">Managed high-stakes medical laboratory data for 5 years, ensuring precision, compliance, and accurate clinical outcomes.</p>
-                    <a href="mailto:joybenalozie@gmail.com" class="text-purple-700 text-sm font-semibold flex items-center hover:underline">
+                    <a href="mailto:joybenalozie@gmail.com" class="text-purple-700 text-sm font-semibold flex items-center hovliker:underline">
                         Inquire about Case Study
                         <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>

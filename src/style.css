@@ -449,3 +449,220 @@ html.dark #iconMoon { display: none;  }
 
 .connect-btn:hover  { background: #6d28d9; }
 .connect-btn:active { transform: scale(0.98); }
+
+/* ── Hero Section ── */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: linear-gradient(135deg, #ede9fe 0%, #f5f3ff 50%, #ddd6fe 100%);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+
+html.dark .hero-section {
+  background: linear-gradient(135deg, #1e1a3a 0%, #16122e 50%, #1a1535 100%);
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem 3.5rem;
+  }
+}
+
+/* Left column */
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid #ddd6fe;
+  border-radius: 9999px;
+  padding: 0.35rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5b21b6;
+  width: fit-content;
+  backdrop-filter: blur(4px);
+}
+
+html.dark .hero-badge {
+  background: rgba(255,255,255,0.08);
+  border-color: #4c1d95;
+  color: #c4b5fd;
+}
+
+.hero-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #7c3aed;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.hero-heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text-900);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .hero-heading { font-size: 3.5rem; }
+}
+
+.hero-name {
+  color: #7c3aed;
+}
+
+.hero-sub {
+  font-size: 0.95rem;
+  color: var(--text-600);
+  line-height: 1.7;
+  max-width: 38ch;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #7c3aed;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 4px 14px rgba(124,58,237,0.35);
+}
+
+.hero-btn-primary:hover  { background: #6d28d9; }
+.hero-btn-primary:active { transform: scale(0.97); }
+
+.hero-btn-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.hero-btn-secondary {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-700);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.hero-btn-secondary:hover { color: #7c3aed; }
+
+/* Right column */
+.hero-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+}
+
+/* Photo circle */
+.hero-photo-wrap {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 32px rgba(124,58,237,0.2);
+  background: #ede9fe;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .hero-photo-wrap {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* Fallback when image is missing */
+.hero-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.hero-photo-placeholder::after {
+  content: '👩';
+}
+
+/* Floating badges */
+.hero-float {
+  position: absolute;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid #e9e4ff;
+  border-radius: 12px;
+  padding: 0.5rem 0.85rem;
+  box-shadow: 0 4px 16px rgba(124,58,237,0.12);
+  backdrop-filter: blur(6px);
+  min-width: 120px;
+}
+
+html.dark .hero-float {
+  background: rgba(30,26,58,0.92);
+  border-color: #3b2f6e;
+}
+
+.hero-float-tr {
+  top: 0;
+  right: 0;
+}
+
+.hero-float-bl {
+  bottom: 0;
+  left: 0;
+}
+
+.hero-float-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7c3aed;
+  margin-bottom: 0.15rem;
+}
+
+.hero-float-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-900);
+}
